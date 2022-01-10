@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "APR Dziekanat Theme",
+  "version": "1.0",
+  "icons": {
+    "256": "icons/dziekanat-256.png"
+  },
+  "description": "Theme for Dziekanat WSEI",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://dziekanat.wsei.lublin.pl/*"
+      ],
+      "js": [
+        "dziekanat.js"
+      ],
+      "css": [
+        "theme.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/dziekanat-256.png"
+      ],
+      "matches": [
+        "*://dziekanat.wsei.lublin.pl/*"
+      ]
+    }
+  ]
+}

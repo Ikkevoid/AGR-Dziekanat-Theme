@@ -1,0 +1,822 @@
+:root {
+	--blue-300: #93C5FD;
+	--blue-400: #60A5FA;
+	--gap-2: .5rem;
+	--rounded: .25rem;
+	--shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+	font-family: "Poppins" !important;
+}
+
+table {
+	border-collapse: separate;
+}
+
+pre {
+	white-space: pre-line;
+}
+
+#table_glowna {
+	max-width: 1536px;
+	margin: 0 auto;
+}
+#td_logo img {
+	border-radius: var(--rounded);
+}
+
+#td_tresc,
+.ramka,
+#aspnetForm {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-2);
+}
+#aspnetForm div:empty {
+	display: none !important
+}
+
+#td_tresc > table:first-of-type tbody tr {
+	display: flex;
+	gap: var(--gap-2);
+}
+
+#td_stopka span {
+	display: none;
+}
+
+#td_stopka:after {
+	content: "Dziekanat - Theme by Ikkevoid";
+	color: gray;
+}
+
+.Cookies {
+	border-radius: var(--rounded);
+	overflow: hidden;
+	box-shadow: var(--shadow);
+	top: unset !important;
+	bottom: 0 !important;
+	left: unset !important;
+	right: 0 !important;
+	margin: var(--gap-2) !important;
+	width: 30rem !important;
+}
+.Cookies .header {
+	background: var(--blue-400) !important
+}
+.Cookies .msg {
+	border-radius: 0 !important;
+	border: none !important;
+}
+
+/*Ukrycie obrazów*/
+.menu,
+.zakladka,
+.zakladka_normalna,
+.zakladka_srodkowa,
+.zakladka_srodkowa_podswietlona,
+.index_srodkowa {
+	background-image: none !important;
+}
+
+.img_rog,
+.zakladka_lewa,
+.zakladka_prawa,
+.zakladka_lewa_podswietlona,
+.zakladka_prawa_podswietlona {
+	display: none;
+}
+
+body {
+	background: none !important;
+}
+
+
+/*Profilowe*/
+img.sensitive {
+	border-style: unset !important;
+	content: url("https://img.icons8.com/small/96/808080/user-male-circle.png");
+	width: auto !important;
+	height: auto !important;
+}
+
+
+/*Menu*/
+.menu_normalne,
+.menu_podswietlone,
+.zakladka_normalna,
+.zakladka {
+	padding: var(--gap-2) !important;
+	border: none !important;
+	border-radius: var(--rounded);
+	transition: all 0.2s ease;
+	color: black !important;
+}
+
+a.menu {
+	width: auto;
+}
+
+#td_logo,
+#td_naglowek,
+#td_menu,
+#td_tresc {
+	padding: calc(var(--gap-2) / 2);
+}
+#td_menu br,
+br[style="clear: both;"],
+br[style="clear: both"],
+br[style^="clear:both"],
+#fileForm br {
+	display: none;
+}
+#td_menu .menu {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-2);
+}
+
+.zakladka_podswietlona,
+.menu_podswietlone {
+	background: var(--blue-400);
+	color: white !important;
+	box-shadow: var(--shadow);
+}
+
+/*Belka*/
+.belka,
+table.dane,
+.belka_light {
+	border: none !important;
+	margin: 0 !important;
+	box-shadow: var(--shadow);
+}
+th.dane {
+	background: var(--blue-400) !important;
+	border: none !important;
+}
+
+/*TESTING*/
+#td_tresc table[style="width: 100%;"] {
+	border-radius: var(--rounded);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+}
+
+.naglowek table[style="width: 100%;"] {
+	padding: var(--gap-2);
+}
+.belka {
+	background: var(--blue-400) !important;
+	border-radius: var(--rounded);
+	padding: var(--gap-2) !important;
+}
+
+.belka_light {
+	background: var(--blue-400) !important;
+	border-radius: var(--rounded);
+	display: flex;
+	align-items: center;
+	gap: var(--gap-2);
+	padding: var(--gap-2) !important;
+}
+
+.belka_light a[style*="float: right;"],
+#pomoc {
+	margin: 0 0 0 auto !important;
+}
+.belka_light:empty {
+	display: none;
+}
+
+.komunikat,
+p,
+div[style="margin:20px;"] {
+	margin: 0;
+	padding-left: var(--gap-2) !important;
+	padding-right: var(--gap-2) !important;
+}
+
+div[style="margin:20px;"] {
+	margin: 0 !important;
+}
+
+/*Usunięcie dolnej ramki na dole oraz cale tabele*/
+table.dane {
+	border-radius: var(--rounded);
+	overflow: hidden;
+	border: none;
+	box-sizing: border-box;
+	border-collapse: separate;
+	box-shadow: var(--shadow);
+}
+td.dane {
+	border: none;
+	padding: var(--gap-2);
+}
+.ramka {
+	border: none !important;
+	border-radius: var(--rounded);
+	overflow: visible !important;
+}
+
+/*Przyciski*/
+a.przycisk,
+span.przycisk,
+div.przycisk,
+.dxbButton_Aqua,
+input[type=text],
+input[type=password] {
+	background: #F3F4F6;
+	padding: var(--gap-2);
+	border-radius: var(--rounded);
+	border: none;
+	text-align: center !important;
+	box-shadow: var(--shadow);
+	width: auto;
+	height: auto !important;
+	font-size: unset !important;
+}
+
+a.przycisk:hover,
+span.przycisk:hover,
+div.przycisk:hover {
+	background: var(--blue-300);
+	padding: var(--gap-2);
+	border-radius: var(--rounded);
+	border: none;
+}
+
+input[type=button],
+input[type=file] {
+	border: none;
+	padding: var(--gap-2);
+	background: #F3F4F6;
+	color: black;
+	border-radius: var(--rounded);
+	box-shadow: var(--shadow)
+}
+
+/*Pola tekstowe*/
+#imie,
+#nazwisko {
+	border: none;
+	padding: var(--gap-2);
+	border-radius: var(--rounded);
+	margin-right: var(--gap-2);
+	background: #F3F4F6;
+	box-shadow: var(--shadow)
+}
+
+.naglowek {
+	background: white !important;
+	border-bottom: none !important;
+	border-radius: var(--rounded);
+	padding: 0 !important;
+}
+
+.naglowek_filtry {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: var(--gap-2);
+	padding: var(--gap-2) !important;
+}
+
+.naglowek > form[action="/TokStudiow/StudentTokStudiow/Grupy"] > table > tbody > tr {
+	display: flex;
+	align-items: center;
+	gap: var(--gap-2);
+}
+
+form[action="/UstawieniaJezyka"] .ramka > div {
+	display: flex;
+	align-items: center;
+	gap: var(--gap-2);
+}
+.dxb-hbc {
+	display: none;
+}
+
+form[action="/UstawieniaJezyka"] .ramka .dxbButton_Aqua {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#form_profile {
+	margin-left: var(--gap-2);
+	margin-right: var(--gap-2);
+}
+#fileForm {
+	display: flex;
+	gap: var(--gap-2);
+}
+
+div[id^="Plan"] {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-2);
+}
+
+div.przycisk {
+	margin-left: var(--gap-2)
+}
+
+div.naglowek > table[style="width: 100%;"] > tbody > tr {
+	display: flex;
+	align-items: center;
+}
+
+div.naglowek > table[style="width: 100%;"] > tbody > tr > td:first-of-type {
+	flex-grow: 1;
+}
+
+div.naglowek > table[style="width: 100%;"] > tbody > tr > td[style="width: 150px;"] {
+	width: auto !important;
+}
+
+div[id^="Plan"] > table.dane > tbody > tr {
+	display: flex;
+	gap: var(--gap-2);
+	justify-content: space-between;
+	align-items: center;
+	background: var(--blue-400);
+	padding: var(--gap-2);
+}
+
+div[id^="Plan"] > table.dane > tbody > tr > th {
+	width: auto !important;
+	padding: 0 !important;
+}
+
+div[id^="Plan"] a.przycisk,
+div.przycisk span {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	user-select: none;
+}
+
+#aspnetForm[action="Oplaty"],
+#aspnetForm[action="ZapisyNaPrzedmioty"],
+#aspnetForm[action="ZapisyNaPraceDyplomowe"],
+#aspnetForm[action="ZapisyNaPraktyki"],
+#aspnetForm[action="Konto"],
+#aspnetForm[action="Ankiety"] {
+	margin-right: -.5rem;
+}
+
+.filtr_lewy {
+	margin: 0 !important
+}
+
+.filtr_prawy {
+	float: none !important;
+	display: flex !important;
+	gap: var(--gap-2);
+}
+.prakts_filtr {
+	height: auto !important;
+	margin: 0 !important;
+}
+
+th.dane2n {
+	background: var(--blue-400);
+	border: none;
+}
+
+table.dane2n {
+	box-shadow: var(--shadow);
+	border: none;
+	border-radius: var(--rounded);
+	overflow: hidden;
+}
+
+/*DevExpress Components*/
+.dxeButtonEdit_Aqua,
+select {
+	background: #F3F4F6;
+	padding: var(--gap-2);
+	border-radius: var(--rounded);
+	margin: 0 !important;
+	border: none;
+	box-shadow: var(--shadow);
+	text-align: center;
+}
+.dxeButtonEdit_Aqua .dxeEditArea_Aqua {
+	background: #F3F4F6;
+}
+
+.dxeButtonEdit_Aqua .dxic {
+	padding: 0 !important;
+}
+
+/*Przycisk*/
+td[id$=groupcol0],
+.dxeCalendarButton_Aqua {
+	background: #F3F4F6 !important;
+	color: black !important;
+	border: none !important;
+	padding: var(--gap-2);
+	border-radius: var(--rounded);
+	text-align: center;
+	box-shadow: var(--shadow);
+}
+td[id$=groupcol0] table {
+	color: black;
+}
+
+.dxgvGroupPanel_Aqua,
+.dxgvHeader_Aqua,
+.dxgvIndentCell,
+.dxgvGroupRow_Aqua {
+	background: white !important;
+	color: black !important;
+}
+
+.dxgvHeader_Aqua,
+.dxgvGroupPanel_Aqua,
+.dxgvIndentCell,
+td.dxgv {
+	border-color: #bfdbfe2e !important;
+}
+
+.dxgvHeader_Aqua table {
+	color: black
+}
+
+.dxeButtonEditButton_Aqua,
+.dxgvEmptyDataRow_Aqua {
+	background: none;
+	border: none;
+}
+
+.dxgvControl_Aqua {
+	border-radius: var(--rounded);
+	overflow: hidden;
+	border: none;
+	box-shadow: var(--shadow);
+}
+
+.dxgvControl_Aqua a {
+	color: unset !important;
+}
+
+table.dane .dxgvControl_Aqua {
+	border-radius: 0;
+	border: none;
+}
+
+
+/*Dialog i kalendarz*/
+.dxpc-mainDiv,
+.dxeCalendar_Aqua {
+	background: white !important;
+	border-radius: var(--rounded);
+	box-shadow: var(--shadow-lg);
+	border: none !important;
+	overflow: hidden;
+}
+
+.dxpc-mainDiv .dxpc-header {
+	background: var(--blue-400) !important;
+	color: white;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.dxpc-mainDiv .dxpc-footer,
+.dxeCalendarHeader_Aqua,
+.dxeCalendarFooter_Aqua {
+	background: var(--blue-400) !important;
+	color: white;
+}
+.dxeCalendarHeader_Aqua td.dxe {
+	color: white !important;
+}
+
+.dxeCalendarFooter_Aqua {
+	padding: var(--gap-2);
+}
+
+.dxeCalendarToday_Aqua,
+.dxeCalendarFastNavItem_Aqua {
+	border-radius: var(--rounded)
+}
+
+
+.dxeCalendarSelected_Aqua,
+.dxeCalendarFastNavItemSelected_Aqua {
+	background: var(--blue-400) !important;
+	color: white !important;
+	border-radius: var(--rounded)
+}
+
+.dxeCalendarHover_Aqua,
+.dxeCalendarFastNavItemHover_Aqua {
+	background: var(--blue-300) !important;
+	color: white !important;
+	border-radius: var(--rounded)
+}
+
+/*Use monospaced font to avoid jumping when chaning pages*/
+.dxeCalendar_Aqua * {
+	font-family: Tahoma, Geneva, sans-serif !important;
+}
+
+/*Dropdown*/
+.dxeListBoxItem_Aqua {
+	border: none;
+}
+
+.dxeListBoxItemSelected_Aqua {
+	background: var(--blue-400);
+	color: white;
+	border: none;
+}
+.dxeListBoxItemHover_Aqua {
+	background: var(--blue-300);
+	border: none;
+}
+
+.dxeListBox_Aqua {
+	border: none;
+	height: 100%;
+}
+
+.dxlbd {
+	height: 100%;
+}
+
+
+/*Logowanie i rejestracja*/
+table.formularz,
+.dxlpLoadingPanel_Aqua {
+	background: var(--blue-400);
+	border: none;
+	border-radius: var(--rounded);
+	border-collapse: separate;
+	border-spacing: revert;
+	box-shadow: var(--shadow);
+	color: white;
+}
+
+table.formularz {
+	padding: var(--gap-2)
+}
+
+.dxlpLoadingPanel_Aqua {
+	box-shadow: var(--shadow-lg);
+}
+
+table.formularz td {
+	background: var(--blue-400) !important;
+	border: none;
+	text-align: center;
+	color: unset;
+}
+
+
+.formularz_dane fieldset {
+	border: none !important;
+	color: unset !important;
+	width: auto !important;
+}
+
+.formularz_dane fieldset div {
+	text-transform: capitalize;
+}
+
+.formularz_nazwa:empty {
+	display: none !important;
+}
+
+table.formularz tbody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--gap-2)
+}
+
+td.formularz_stopka {
+	padding: 0;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid white;
+}
+
+.validation-summary-errors,
+.wysoki,
+.field-validation-error{
+	color: #EF4444;
+}
+
+div.lang > a,
+td a,
+.msg a {
+	color: var(--blue-400)
+}
+
+
+
+
+
+/*Ikony*/
+img[src*="/Content/blue/img/find.png"] {
+	content: url("https://img.icons8.com/small/16/000000/search.png");
+}
+
+img[src*="/Content/blue/img/info.png"] {
+	content: url("https://img.icons8.com/small/16/000000/info.png");
+}
+
+.belka_light > img[src*="/Content/blue/img/info.png"] {
+	content: url("https://img.icons8.com/small/16/ffffff/info.png");
+}
+
+img[src*="/Content/blue/img/edit.png"] {
+	content: url("https://img.icons8.com/small/16/000000/edit.png");
+}
+
+img[src*="/Content/blue/img/save.png"] {
+	content: url("https://img.icons8.com/small/16/000000/save.png");
+}
+
+img[src*="/Content/blue/img/details.png"] {
+	content: url("https://img.icons8.com/small/16/000000/details.png");
+}
+
+img[src*="/Content/blue/img/mag-.png"] {
+	content: url("https://img.icons8.com/small/16/000000/zoom-out.png");
+}
+
+img[src*="/Content/blue/img/magplus.png"] {
+	content: url("https://img.icons8.com/small/16/000000/zoom-in.png");
+}
+
+img[src*="/Content/blue/img/select.png"] {
+	content: url("https://img.icons8.com/small/16/000000/columns.png");
+}
+
+img[src*="/Content/blue/img/list.png"] {
+	content: url("https://img.icons8.com/small/16/000000/overview-pages-3.png");
+}
+
+img[src*="/Content/blue/img/advertisement.png"] {
+	content: url("https://img.icons8.com/small/16/000000/show-property.png");
+}
+
+img[src*="/Content/blue/img/advertisement.png"] {
+	content: url("https://img.icons8.com/small/16/000000/show-property.png");
+}
+
+img[src*="/Content/blue/img/print.png"] {
+	content: url("https://img.icons8.com/small/16/000000/print.png");
+}
+
+img[src*="/Content/blue/img/mail.png"] {
+	content: url("https://img.icons8.com/small/16/000000/forgot-password.png");
+}
+
+img[src*="/Content/blue/img/login.png"] {
+	content: url("https://img.icons8.com/small/16/000000/login.png");
+}
+
+img[src*="/Content/blue/img/register.png"] {
+	content: url("https://img.icons8.com/small/16/000000/id-verified.png");
+}
+img[src*="/Content/blue/img/new.png"] {
+	content: url("https://img.icons8.com/small/16/000000/star.png");
+}
+
+img[src*="/Content/blue/img/cancel.png"] {
+	content: url("https://img.icons8.com/small/16/000000/cancel.png");
+}
+
+img[src*="/Content/blue/img/ok.png"] {
+	content: url("https://img.icons8.com/small/16/000000/ok.png");
+}
+
+.crumb_separator {
+	background: none;
+	content: url("https://img.icons8.com/small/16/000000/more-than.png");
+}
+
+img.dxWeb_pcCloseButton_Aqua {
+	width: auto;
+	height: auto;
+	background: none;
+	content: url("https://img.icons8.com/small/16/ffffff/cancel--v1.png");
+}
+
+img.dxGridView_gvHeaderSortUp_Aqua,
+img.dxGridView_gvHeaderSortDown_Aqua {
+	background: none;
+	width: auto !important;
+	height: auto !important;
+}
+
+img.dxGridView_gvHeaderSortUp_Aqua {
+	content: url("https://img.icons8.com/small/16/808080/sort-up.png");
+}
+
+img.dxGridView_gvHeaderSortDown_Aqua {
+	content: url("https://img.icons8.com/small/16/808080/sort-down.png");
+}
+
+img.dxGridView_gvExpandedButton_Aqua,
+img.dxGridView_gvCollapsedButton_Aqua,
+img.dxEditors_edtDropDown_Aqua {
+	background: none !important;
+	padding: unset;
+	width: auto !important;
+	height: auto !important;
+	vertical-align: middle;
+}
+
+img.dxGridView_gvExpandedButton_Aqua {
+	content: url("https://img.icons8.com/small/16/000000/collapse-arrow.png");
+}
+img.dxGridView_gvCollapsedButton_Aqua {
+	content: url("https://img.icons8.com/small/16/000000/expand-arrow.png");
+}
+
+img.dxEditors_edtDropDown_Aqua {
+	content: url("https://img.icons8.com/small/16/000000/expand-arrow.png");
+}
+
+img.dxlp-loadingImage {
+	width: auto !important;
+	height: auto !important;
+	background: none !important;
+	content: url("https://img.icons8.com/small/16/ffffff/refresh.png");
+}
+
+img.dxEditors_edtCalendarPrevYear_Aqua,
+img.dxEditors_edtCalendarPrevMonth_Aqua,
+img.dxEditors_edtCalendarNextMonth_Aqua,
+img.dxEditors_edtCalendarNextYear_Aqua,
+img.dxEditors_edtCalendarFNNextPeriod_Aqua,
+img.dxEditors_edtCalendarFNPrevPeriod_Aqua,
+img.dxGridView_gvDragAndDropArrowDown_Aqua {
+	background: none;
+	width: 16px;
+	height: 16px;
+}
+
+img.dxEditors_edtCalendarPrevYear_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/double-left.png");
+}
+
+img.dxEditors_edtCalendarPrevMonth_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/back.png");
+}
+
+img.dxEditors_edtCalendarNextMonth_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/forward.png");
+}
+
+img.dxEditors_edtCalendarNextYear_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/double-right.png");
+}
+
+img.dxEditors_edtCalendarFNNextPeriod_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/double-right.png");
+}
+
+img.dxEditors_edtCalendarFNNextPeriod_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/forward.png");
+}
+img.dxEditors_edtCalendarFNPrevPeriod_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/back.png");
+}
+
+img.dxGridView_gvDragAndDropArrowDown_Aqua {
+	content: url("https://img.icons8.com/small/16/ffffff/back.png") !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+
+img[src="/Content/blue/img/arrow_up.png"] {
+	content: url("https://img.icons8.com/small/16/000000/collapse-arrow.png") !important;
+}
+
+img[src="/Content/blue/img/arrow_down.png"] {
+	content: url("https://img.icons8.com/small/16/000000/expand-arrow.png") !important;
+}
+
+img[src="/Content/blue/img/back.png"] {
+	content: url("https://img.icons8.com/small/16/000000/back.png");
+}
+
+img#captchaImg {
+	border-radius: var(--rounded);
+	box-shadow: var(--shadow);
+}
